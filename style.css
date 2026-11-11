@@ -1,27 +1,6 @@
 :root {
-  --bg: #FFF8F6;
-  --surface: #FFFFFF;
-  --text: #21101B;
-  --muted: #6B5462;
-  --line: #F0DDE3;
-  --accent: #C81E5B;
-  --accent-ink: #FFFFFF;
-  --accent-soft: #FFE9EF;
-  --brand: linear-gradient(135deg, #FF3D81, #FF7A59);
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #1B0A16;
-    --surface: #2A0F22;
-    --text: #FFF5F2;
-    --muted: #E0B9C6;
-    --line: #45193A;
-    --accent: #FF9A7A;
-    --accent-ink: #1B0A16;
-    --accent-soft: #3A1530;
-  }
-}
-:root[data-theme="dark"] {
+  /* Same palette as the app (always dark plum) */
+  color-scheme: dark;
   --bg: #1B0A16;
   --surface: #2A0F22;
   --text: #FFF5F2;
@@ -30,6 +9,10 @@
   --accent: #FF9A7A;
   --accent-ink: #1B0A16;
   --accent-soft: #3A1530;
+  --butter: #FFD66B;
+  --butter-ink: #1B0A16;
+  --brand: linear-gradient(135deg, #FF3D81, #FF7A59);
+  --radius: 16px;
 }
 
 * { box-sizing: border-box; }
@@ -84,7 +67,7 @@ nav.links a:hover, nav.links a[aria-current="page"] { color: var(--text); }
   padding: 20px;
 }
 .step .num {
-  width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: var(--accent-ink);
+  width: 30px; height: 30px; border-radius: 50%; background: var(--butter); color: var(--butter-ink);
   display: grid; place-items: center; font-weight: 700; font-size: 15px; margin-bottom: 12px;
 }
 .step h3 { margin: 0 0 6px; font-size: 18px; }
