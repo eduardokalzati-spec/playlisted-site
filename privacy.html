@@ -24,7 +24,7 @@
 
 <main class="wrap doc">
   <h1>Privacy Policy</h1>
-  <p class="updated">Effective November 9, 2026</p>
+  <p class="updated">Effective November 11, 2026</p>
 
   <div class="summary"><p><strong>The short version:</strong> Playlisted has no accounts and no ads, and we don't sell or share your data for advertising. To find a song, we briefly fetch the audio of the post you share, send a short clip to our song-recognition partner, and then delete the video and audio. We keep only what's needed to count your free songs and to remember which song a post contained.</p></div>
 
@@ -34,9 +34,11 @@
   <h2>What happens when you share a video</h2>
   <ul>
     <li>The app sends us the link you shared. If you share a screen recording instead (for example for YouTube), the app sends us that file, and it's deleted the same way.</li>
-    <li>Our server downloads the post's audio, cuts up to three short clips, and may read the post's public caption to help name the song.</li>
-    <li>A short audio clip (about 15 seconds) is sent to ACRCloud, our song-recognition provider, which tells us which song it is.</li>
+    <li>Our server first reads the post's public details: its caption and its music label (the song name shown on the post). If the label names the song, that's the answer and no audio is used.</li>
+    <li>Otherwise, our server downloads the post's audio, cuts up to three short clips, and may use the caption to help name the song.</li>
+    <li>When we need to listen, a short audio clip (about 15 seconds) is sent to ACRCloud, our song-recognition provider, which tells us which song it is.</li>
     <li>The downloaded video, audio and clips are deleted from our server as soon as the request finishes, whether or not a song was found.</li>
+    <li>When you search for a song by name, the words you type go to our server and to Apple Music's catalog to show results. We don't save your searches.</li>
   </ul>
 
   <h2>What we keep</h2>
@@ -58,8 +60,8 @@
   <ul>
     <li>The videos or audio you share.</li>
     <li>Your name, email address, phone number or location.</li>
-    <li>Your Apple Music access token or your playlists. The app uses them only to show your playlists and add the song you pick, at that moment.</li>
-    <li>Your list of found songs. That history is stored on your iPhone only, and deleting the app deletes it.</li>
+    <li>Your Apple Music access token or your playlists. The app uses them only to show your playlists and add the song you pick, at that moment. If you turn on Auto-add, the playlist you choose is saved on your iPhone only.</li>
+    <li>Your list of found songs, including posts you're still looking for. That history is stored on your iPhone only, and deleting the app deletes it.</li>
     <li>Payment details. Apple handles all payments; we only learn whether your subscription is active.</li>
   </ul>
 
