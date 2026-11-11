@@ -102,6 +102,10 @@ section.block h2 { font-size: 26px; letter-spacing: -0.02em; margin: 0 0 14px; }
 .plan h3 { margin: 0 0 4px; font-size: 18px; }
 .plan .price { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; }
 .plan .price small { font-size: 15px; font-weight: 500; color: var(--muted); }
+.plan .badge {
+  display: inline-block; vertical-align: middle; margin-left: 6px; padding: 3px 9px; border-radius: 999px;
+  background: #C81E5B; color: #FFFFFF; font-size: 13px; font-weight: 800; letter-spacing: 0; white-space: nowrap;
+}
 .plan ul { margin: 12px 0 0; padding-left: 20px; color: var(--muted); font-size: 15px; }
 
 /* Legal and help pages */
